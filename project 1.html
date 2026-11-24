@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIBRANCE 2026 - College Cultural Fest</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f9;
+    color: #222;
+}
+
+header {
+    background: #17102e;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #ffcc33;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #ffcc33;
+}
+
+.hero {
+    background: linear-gradient(135deg, #240046, #7b2cbf, #e85d04);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #ffcc33;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffcc33;
+    color: #17102e;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #4a148c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.details, .performers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.detail-card, .performer-card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.detail-card h3, .performer-card h3 {
+    color: #7b2cbf;
+    margin-bottom: 12px;
+}
+
+.schedule, .venue {
+    background: #eee7f7;
+}
+
+table {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #4a148c;
+    color: white;
+}
+
+tr:hover {
+    background: #f3e5f5;
+}
+
+.emoji {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.registration {
+    background: linear-gradient(135deg, #240046, #7b2cbf);
+    color: white;
+}
+
+.registration h2 {
+    color: #ffcc33;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    color: #222;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background: #ffcc33;
+    color: #17102e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background: #17102e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h2>VIBRANCE 2026</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#performers">Performers</a>
+        <a href="#venue">Venue</a>
+        <a href="#register">Register</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>VIBRANCE 2026</h1>
+    <p>The Ultimate College Cultural Festival</p>
+    <p>Music | Dance | Art | Fun | Celebration</p>
+    <p>December 18 & 19, 2026</p>
+    <a href="#register" class="btn">Register Now</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About The Event</h2>
+
+    <p>
+        Welcome to VIBRANCE 2026! Get ready for two exciting
+        days filled with music, dance, cultural performances,
+        competitions and unforgettable memories.
+    </p>
+
+    <div class="details">
+
+        <div class="detail-card">
+            <h3>📅 Date</h3>
+            <p>December 18-19, 2026</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>⏰ Time</h3>
+            <p>9:00 AM - 8:00 PM</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>🎭 Events</h3>
+            <p>Dance, Music, Art & Games</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>🎟 Entry</h3>
+            <p>Open to College Students</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+    <h2>Event Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Venue</th>
+        </tr>
+
+        <tr>
+            <td>9:00 AM</td>
+            <td>Inauguration Ceremony</td>
+            <td>Main Stage</td>
+        </tr>
+
+        <tr>
+            <td>10:00 AM</td>
+            <td>Classical Dance</td>
+            <td>Auditorium</td>
+        </tr>
+
+        <tr>
+            <td>12:00 PM</td>
+            <td>Music Competition</td>
+            <td>Main Stage</td>
+        </tr>
+
+        <tr>
+            <td>2:00 PM</td>
+            <td>Fashion Show</td>
+            <td>Main Stage</td>
+        </tr>
+
+        <tr>
+            <td>4:00 PM</td>
+            <td>DJ Night</td>
+            <td>Open Ground</td>
+        </tr>
+
+        <tr>
+            <td>6:00 PM</td>
+            <td>Prize Distribution</td>
+            <td>Auditorium</td>
+        </tr>
+    </table>
+</section>
+
+<!-- PERFORMERS -->
+<section id="performers">
+    <h2>Our Performers</h2>
+
+    <div class="performers">
+
+        <div class="performer-card">
+            <div class="emoji">🎤</div>
+            <h3>Arjun Music Band</h3>
+            <p>Live Musical Performance</p>
+        </div>
+
+        <div class="performer-card">
+            <div class="emoji">💃</div>
+            <h3>Rhythm Crew</h3>
+            <p>Special Dance Performance</p>
+        </div>
+
+        <div class="performer-card">
+            <div class="emoji">🎧</div>
+            <h3>DJ Thunder</h3>
+            <p>Live DJ Performance</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VENUE -->
+<section class="venue" id="venue">
+    <h2>Event Venue</h2>
+
+    <h3>ABC College of Engineering</h3>
+    <br>
+
+    <p>Vijayawada, Andhra Pradesh, India</p>
+
+    <br>
+
+    <p>
+        Join us at our college campus for two days of
+        entertainment, creativity and celebration.
+    </p>
+</section>
+
+<!-- REGISTRATION -->
+<section class="registration" id="register">
+    <h2>Event Registration</h2>
+
+    <p>Register now and become a part of VIBRANCE 2026!</p>
+    <br>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+        placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="Enter your phone number" required>
+
+        <label for="college">College Name</label>
+        <input type="text" id="college" name="college"
+        placeholder="Enter college name" required>
+
+        <label for="event">Select Event</label>
+
+        <select id="event" name="event" required>
+            <option value="">Choose an event</option>
+            <option>Dance</option>
+            <option>Singing</option>
+            <option>Fashion Show</option>
+            <option>Photography</option>
+            <option>Art Competition</option>
+            <option>DJ Night</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 VIBRANCE College Fest. All Rights Reserved.</p>
+    <br>
+    <p>Instagram | Facebook | YouTube</p>
+    <br>
+    <p>Contact: vibrance@example.com</p>
+</footer>
+
+</body>
+</html>
